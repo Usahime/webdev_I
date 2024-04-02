@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 5</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Calibri, sans-serif;
+        }
+        #menu, #rodape {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+        }
+        #corpo {
+            display: flex;
+            flex-grow: 1;
+            background-color: #444;
+            align-items: center;
+            justify-content: center;
+        }
+        #titulo {
+            display: flex;
+            align-items: center;
+        }
+        #titulo img {
+            margin-right: 10px;
+            width: 60px;
+            height: 60px;
+        }
+        #titulo div {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        #avatar{
+            display: flex;
+            align-items: center;
+        }
+        #avatar div {
+            margin-right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        #avatar img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+        }
+        #rodape img {
+            margin-right: 10px;
+            width: 80px;
+            height: 80px;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            border-radius: 5px;
+            padding: 15px;
+            color: white;
+        }
+        fieldset div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        fieldset input {
+            background-color: white;
+            width: all;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px;
+        }
+        fieldset  label{
+            font-size: 14px;
+        }
+        #botoes input{
+            background-color: #1E90FF;
+            text-align: center;
+            color: white;
+            margin-top: 4px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="titulo">
+        <img src="imagens/css_logo.png" alt="" width="60" height="60" />
+        <div>CSS3</div>
+      </div>
+      <div id="avatar">
+        <div>Bill Gates</div>
+        <img src="imagens/bg_avatar.jpg" alt="" width="42" height="42" />
+      </div>
+    </div>
+    <div id="corpo">
+      <form>
+        <fieldset>
+          <legend>Login</legend>
+          <div>
+            <label>e-mail</label>
+            <input type="email" name="mail" />
+          </div>
+          <div>
+            <label>Senha</label>
+            <input type="password" name="senha" />
+          </div>
+          <div id="botoes">
+            <input type="submit" value="Enviar" class="botao" />
+            <input type="reset" value="Limpar" class="botao" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="rodape">
+      <img src="imagens/fatec_logo.png" alt="" width="87" height="41" />
+      <img src="imagens/CPS_logo.png" width="85" height="56" />
+      <img src="imagens/brasaosp_logo.png" alt="" width="81" height="54" />
+    </div>
+  </body>
+</html>
